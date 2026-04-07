@@ -1,4 +1,4 @@
-# SS Before After (Українська)
+# SS Gutenberg Before After (Українська)
 
 <div align="right">
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=sailstudio.com@gmail.com&currency_code=USD">

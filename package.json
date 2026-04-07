@@ -1,5 +1,5 @@
 {
-  "name": "ss-before-after",
+  "name": "ss-gutenberg-before-after",
   "version": "1.0.0",
   "description": "Before-After Gutenberg Block",
   "main": "build/index.js",

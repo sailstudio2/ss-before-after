@@ -1,4 +1,4 @@
-# SS Before After
+# SS Gutenberg Before After
 
 <div align="right">
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=sailstudio.com@gmail.com&currency_code=USD">

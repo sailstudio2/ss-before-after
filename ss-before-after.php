@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: SS Before After
+ * Plugin Name: SS Gutenberg Before After
  * Description: Gutenberg block for Before/After works with grid, slider and pagination.
  * Version: 1.0.0
  * Author: SailStudio
