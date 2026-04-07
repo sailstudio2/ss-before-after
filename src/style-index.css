@@ -1,0 +1,136 @@
+/* 
+   SS Before After - Main Frontend Styles.
+   You can edit this file to change the design without rebuilding JS.
+*/
+
+.ss-before-after-wrapper {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.ss-before-after-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+	.ss-before-after-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.ss-before-after-item {
+	background: #FAFAFA;
+	border: 1px solid #EDEDED;
+	border-radius: 16px;
+	padding: 24px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.ss-ba-slider {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 12px;
+	margin-bottom: 24px;
+	user-select: none;
+	-webkit-user-select: none;
+	background: #E1EFF0;
+}
+
+.ss-ba-after,
+.ss-ba-before {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	aspect-ratio: 520 / 300;
+}
+
+.ss-ba-before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* By default show left half */
+	clip-path: inset(0 50% 0 0);
+	filter: blur(5px);
+	pointer-events: none;
+}
+
+/* When slider activated far enough from center, remove blur via JS */
+.ss-ba-slider.no-blur .ss-ba-before {
+	filter: blur(0);
+}
+
+.ss-ba-handle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	background: #584C4C;
+	cursor: ew-resize;
+	transform: translateX(-50%);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ss-ba-handle svg {
+	position: absolute;
+}
+
+/* Typography & Info Layout */
+.ss-ba-info {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ss-info-title {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.ss-ba-text {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #555;
+	margin: 8px 0;
+}
+
+/* Pagination */
+.ss-ba-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	margin-top: 10px;
+}
+
+.ss-ba-page-dot {
+	width: 8px;
+	height: 8px;
+	background: #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.ss-ba-page-dot.active {
+	width: 24px;
+	border-radius: 4px;
+	background: #584C4C;
+}
+
+/* Editor only overrides */
+.wp-block-ss-before-after {
+	width: 100%;
+}

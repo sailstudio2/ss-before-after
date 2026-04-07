@@ -1,0 +1,25 @@
+.ss-before-after-add-btn {
+	background: #f9f9f9;
+	border: 3px dashed #E1DED1;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	min-height: 250px;
+	transition: background 0.3s;
+}
+
+.ss-before-after-add-btn:hover {
+	background: #f1f1f1;
+}
+
+.ss-editor-item {
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: border 0.3s;
+}
+
+.ss-editor-item:hover {
+	border: 2px dashed #E1DED1;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ss-before-after",
+  "version": "1.0.0",
+  "description": "Before-After Gutenberg Block",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.9.0"
+  }
+}
